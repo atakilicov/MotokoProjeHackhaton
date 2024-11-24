@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import NameInput from './NameInput';
+import RedditStyleApp from './RedditStyleApp';
+import '../index.css'; // CSS dosyasını burada dahil edin
 
 const App = () => {
   return (
-    <div style={{ fontFamily: 'Arial, sans-serif', textAlign: 'center', padding: '20px' }}>
-      <h1 style={{ color: '#333' }}>Story Writing App</h1>
-      <NameInput />
+    <div className="min-h-screen bg-gray-900">
+      <RedditStyleApp />
     </div>
   );
 };
@@ -23,5 +23,5 @@ document.addEventListener('DOMContentLoaded', () => {
     );
   } else {
     console.error('Root element not found!');
-  }
+  }
 });
